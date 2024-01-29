@@ -1,8 +1,8 @@
 public class Worker {
-    private OnDone.OnTaskDoneListener callback;
-    private Error.OnTaskErrorListener errorCallback;
+    private OnTaskDoneListener callback;
+    private OnTaskErrorListener errorCallback;
 
-    public Worker(OnDone.OnTaskDoneListener callback, Error.OnTaskErrorListener errorCallback) {
+    public Worker(OnTaskDoneListener callback, OnTaskErrorListener errorCallback) {
         this.callback = callback;
         this.errorCallback = errorCallback;
     }
